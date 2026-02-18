@@ -6,8 +6,9 @@
 
 .product-contents {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
   gap: 20px;
+  margin: 0 auto;
 }
 
 .product-contents .drinks {
@@ -113,16 +114,7 @@
 
 @media screen and (min-width: 1280px) {
   .product {
-    max-width: 1280px;
     padding: 30px;
     margin: 0 auto;
   }
-
-  .product-contents {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
-  }
-
- 
 }
