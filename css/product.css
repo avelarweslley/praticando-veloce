@@ -1,0 +1,128 @@
+.product {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.product-contents {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.product-contents .drinks {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.product-contents .drinks .drink:hover {
+  opacity: 0.7;
+}
+
+.drink.lavande {
+  background: url(../img/drink-lavande.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-position: center;
+  padding: 30px;
+  transition: 0.5s;
+}
+
+.drink.primavera {
+  background: url(../img/drink-primavera.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-position: center;
+  padding: 30px;
+  transition: 0.5s;
+}
+
+.drink.spezia {
+  background: url(../img/drink-Spezia.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-position: center;
+  padding: 30px;
+  transition: 0.5s;
+}
+
+.product-contents .drinks h2 {
+  font-family: "Staatliches", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: var(--text-color-secondary);
+}
+.product-contents .drinks footer {
+  padding-right: 60px;
+  margin-bottom: 50px;
+}
+
+.product-contents .drinks p {
+  font-family: "Staatliches", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 145%;
+  letter-spacing: 0.01em;
+  color: var(--text-color-primary);
+  margin-bottom: 30px;
+}
+
+.product-contents .drinks a {
+  text-decoration: none;
+  font-family: "Staatliches", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 145%;
+  letter-spacing: 0.01em;
+  color: var(--text-color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .product {
+    padding: 30px 0;
+  }
+  .product-contents {
+    padding: 0 100px;
+  }
+
+  .product-contents .drinks h2 {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 110%;
+  }
+
+  .product-contents .drinks p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 135%;
+  }
+  .product-contents .drinks a {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 135%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .product {
+    max-width: 1280px;
+    padding: 30px;
+    margin: 0 auto;
+  }
+
+  .product-contents {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+  }
+
+ 
+}
