@@ -1,0 +1,39 @@
+.flavors {
+  width: 100%;
+  height: auto;
+  background-color: var(--background-color-secondary);
+  padding: 30px;
+}
+.flavors a {
+  text-decoration: none;
+  display: inline;
+  /* display: flex;
+    flex-direction: column;
+    gap: 0; */
+}
+.flavors a p {
+  color: var(--text-color-tertiary);
+  font-family: "Staatliches", sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 80%;
+  letter-spacing: 0.01em;
+  overflow-wrap: break-word;
+  display: inline;
+}
+
+.flavors p.span {
+  color: var(--text-color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .flavors a p {
+    font-size: 130px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .flavors a p {
+    font-size: 150px;
+  }
+}
