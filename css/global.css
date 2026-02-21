@@ -33,6 +33,8 @@
 
   --background-color-primary: #ffffff;
   --background-color-secondary: #cd9d65;
+
+  --background-color-opacity: #000000cc;
 }
 
 * {
