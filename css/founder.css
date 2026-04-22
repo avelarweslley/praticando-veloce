@@ -163,7 +163,7 @@
 
   .founder .founder-headline {
     width: 100%;
-    height: 800px;
+    height: auto;
     background: url(../img/founder-img-desktop.jpg) no-repeat;
     background-size: cover;
     order: 1;
