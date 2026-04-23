@@ -4,6 +4,10 @@
   background-color: var(--background-color-secondary);
 }
 
+.main-footer.abas {
+  background-color: var(--background-color-secondary);
+}
+
 .main-footer .contact-contents {
   display: flex;
   flex-direction: column;
@@ -102,7 +106,7 @@
     align-items: start;
     padding-left: 30px;
   }
-  .main-footer .copyright p{
+  .main-footer .copyright p {
     margin: 17px 0 20px 0;
   }
 }
